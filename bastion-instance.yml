@@ -54,6 +54,7 @@
           Name: "Bastion_host"
           Project: Vprofile
           Owner: DevOps Team
-        group_id: "{{BastionSG_out.group_id}}"
+        security_groups:
+          - "{{ BastionSG_out.group_id }}"  # Adjust based on whether you're using names or IDs
         vpc_subnet_id: "{{pubsub1id}}"
       register: bastionHost_out
