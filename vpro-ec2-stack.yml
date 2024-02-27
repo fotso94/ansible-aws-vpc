@@ -147,7 +147,7 @@
           Project: Vprofile
           Owner: DevOps Team
         exact_count: 1
-        security_groups: "{{vproStackSG_out.security_groups}}"
+        security_groups: "{{vproStackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
       register: db01_out
 
